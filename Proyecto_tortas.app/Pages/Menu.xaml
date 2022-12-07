@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_tortas.app.Pages.Menu"
+             Title="Menu">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Label Text="Bienvenido/a al menu principal" FontSize="Medium" HorizontalOptions="Center" Margin="30"></Label>
+        <Button x:Name="btnCreate" Text="Añadir alimento al menu" Margin="5"></Button>
+        <Button x:Name="btnRead" Text="Ver todos los alimentos disponibles" VerticalOptions="CenterAndExpand" Margin="5"></Button>
+    </VerticalStackLayout>
+</ContentPage>

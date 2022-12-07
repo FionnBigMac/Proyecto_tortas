@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_tortas.app.Pages.Lista_comida"
+             Title="Lista_comida">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lblName"
+               Grid.Row="3"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               ></Label>
+        <Label x:Name="lblCant"
+               Grid.Row="2"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               ></Label>
+        <Label x:Name="lblLugar"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               ></Label>
+        <Button x:Name="btnIzq"
+                Text="Anterior"
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="Coral"
+                Clicked="btnIzq_Clicked"
+                ></Button>
+        <Button x:Name="btnDer"
+                Text="Siguiente"
+                Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="Coral"
+                Clicked="btnDer_Clicked"
+                ></Button>
+    </Grid>
+</ContentPage>
